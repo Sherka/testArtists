@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/artists
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform-org: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create
+      generate-ddl: false
+
+last-fm:
+  app-name: artists-find-and-save
+  api-key: 4fb1b4ac317440e694bc763298324f49
+  api-url: http://ws.audioscrobbler.com/2.0/
+  shared-secret: 17455017aa0f6d3875b25ce9d941d9ac
+  registered-to: sherhan93
